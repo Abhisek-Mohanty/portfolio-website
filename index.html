@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhisek Mohanty | Full-Stack Software Engineer & FinTech Developer</title>
+    <meta name="description"
+        content="Portfolio of Abhisek Mohanty, Techfino Capital Pvt. Ltd., a Mid-level Software Engineer with 2.5+ years of experience specializing in full-stack development, FinTech platforms (LOS/LMS), Angular, TypeScript, Python, and FastAPI.">
+    <meta name="keywords"
+        content="Abhisek Mohanty, Software Engineer, Full Stack Developer, FinTech, LOS, LMS, Angular, Python, FastAPI, Bengaluru, Techfino Capital Pvt. Ltd., TCPL, Techfino">
+
+    <!-- Bootstrap 5.3 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Google Fonts (Inter & Outfit) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Apple-style Navigation Menu -->
+    <header class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <div class="container-xl">
+            <a href="#home" class="navbar-brand logo">
+                <span class="logo-accent">&lt;</span>
+                <span class="logo-accent">Abhisek</span><span class="logo-accent"> /&gt;</span>
+            </a>
+            <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <nav class="navbar-nav ms-auto nav-menu align-items-center">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#demo" class="nav-link">FinTech Demo</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="launches.html" class="nav-link">Launches</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+
+                    <!-- Theme Toggle in Nav -->
+                    <button id="theme-toggle" class="theme-toggle-btn ms-lg-3 mt-3 mt-lg-0" aria-label="Toggle theme">
+                        <!-- Sun Icon -->
+                        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="4"></circle>
+                            <path d="M12 2v2"></path>
+                            <path d="M12 20v2"></path>
+                            <path d="m4.93 4.93 1.41 1.41"></path>
+                            <path d="m17.66 17.66 1.41 1.41"></path>
+                            <path d="M2 12h2"></path>
+                            <path d="M20 12h2"></path>
+                            <path d="m6.34 17.66-1.41 1.41"></path>
+                            <path d="m19.07 4.93-1.41 1.41"></path>
+                        </svg>
+                        <!-- Moon Icon -->
+                        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                        </svg>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section d-flex align-items-center">
+            <div class="container-xl">
+                <div class="row align-items-center g-5">
+                    <!-- Left Hero Content -->
+                    <div class="col-lg-7 hero-content text-start">
+                        <span class="badge hero-badge mb-3"> 🟢 Available for Opportunities</span>
+                        <h1 class="hero-title display-4 mb-2">
+                            Hi, I'm <span class="text-outline">Abhisek</span><span
+                                class="highlight">&nbsp;Mohanty</span>
+                        </h1>
+                        <h2 class="hero-subtitle mb-4">
+                            I am a <span id="typewriter-text" class="typewriter"></span><span class="cursor">|</span>
+                        </h2>
+                        <p class="hero-description lead mb-5">
+                            Mid-level Software Engineer with 2.5+ years of experience specializing in full-stack
+                            development, FinTech systems, and responsive applications. I build secure, high-performance
+                            financial solutions and love transforming complex business workflows into simple digital
+                            experiences.
+                        </p>
+                        <div class="d-flex flex-wrap gap-3 mb-5">
+                            <a href="#contact" class="btn btn-primary btn-lg">
+                                Get In Touch
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ms-1">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                            <a href="/resume.pdf" class="btn btn-secondary btn-lg"
+                                download="Abhisek-Mohanty_Resume">Download
+                                CV</a>
+                        </div>
+                        <div class="hero-socials d-flex gap-3">
+                            <a href="https://github.com/Abhisek-Mohanty" target="_blank" rel="noopener noreferrer"
+                                class="social-link" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                                    </path>
+                                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/abhisek-mohanty-81a8a016a/" target="_blank"
+                                rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                    </path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <a href="mailto:abhisekm048@gmail.com" class="social-link" aria-label="Email">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Right Hero Content (Visual Avatar) -->
+                    <div class="col-lg-5 d-flex justify-content-center hero-visual-container">
+                        <div class="avatar-card-wrapper">
+                            <div class="avatar-card">
+                                <div class="avatar-glow"></div>
+                                <div class="avatar-image-container" id="avatar-container">
+                                    <img src="Gemini_Generated_Image_f03ma7f03ma7f03m (1).png" alt="Abhisek Mohanty"
+                                        class="avatar-image color-avatar" id="avatar-img">
+                                </div>
+                                <div class="tech-stack-ring">
+                                    <span class="tech-icon angular" title="Angular">
+                                        <svg viewBox="0 0 24 24" fill="currentColor">
+                                            <path
+                                                d="M12 2L2 6.5v9L12 22l10-6.5v-9L12 2zm8 4.4L18.4 16h-2.1L15 11.5H9L7.7 16H5.6L4 6.4 12 3.6l8 2.8zM12 6.7L9.9 10h4.2L12 6.7z" />
+                                        </svg>
+                                    </span>
+                                    <span class="tech-icon python" title="Python">
+                                        <svg viewBox="0 0 24 24" fill="currentColor">
+                                            <path
+                                                d="M12 2c-3 0-4.8 1.4-4.8 3.5v1.3H9v-.3c0-1.4.8-2.1 2.5-2.1h1c1.7 0 2.5.7 2.5 2.1v2.1h-4.3c-2.3 0-3.7.8-3.7 2.8v3.1c0 2 1.4 2.8 3.7 2.8h1v-1.3c0-1.7.8-2.5 2.5-2.5h2.1V9.5c0-2-1.4-3.5-4.8-3.5zm-2.5 9c-.6 0-1 .4-1 1s.4 1 1 1 1-.4 1-1-.4-1-1-1zm5 2.5c-.6 0-1 .4-1 1s.4 1 1 1 1-.4 1-1-.4-1-1-1z" />
+                                        </svg>
+                                    </span>
+                                    <span class="tech-icon js" title="JavaScript">
+                                        <svg viewBox="0 0 24 24" fill="currentColor">
+                                            <path
+                                                d="M3 3h18v18H3V3zm13 13.8c-.8.8-1.8 1.2-3 1.2-1.6 0-2.8-.7-3.4-1.7L11 15c.3.5.7.8 1.3.8.6 0 1-.2 1.3-.6s.4-.9.4-1.6V8.3h2.3v5.5c0 1.2-.4 2.2-1.3 3zm-6-2.5c-.2.7-.6 1.2-1.2 1.5-.6.3-1.3.5-2.1.5-1.5 0-2.5-.7-3-1.9l2-1.2c.2.6.6.9 1.1.9.4 0 .7-.2.9-.5.2-.2.3-.5.3-.9 0-.4-.2-.7-.5-.9C4 13.1 3 12.3 3 11c0-1.4 1-2.4 2.7-2.4 1.3 0 2.2.5 2.7 1.5L6.6 11.3c-.2-.4-.5-.6-.9-.6-.4 0-.6.2-.8.4-.2.2-.3.4-.3.7 0 .4.2.6.7.8l1.3.6c1.1.5 1.7 1.3 1.7 2.5z" />
+                                        </svg>
+                                    </span>
+                                    <span class="tech-icon fastapi" title="FastAPI">
+                                        <svg viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 2L2 7l10 5 10-5-10-5zm0 10L2 17l10 5 10-5-10-5z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section py-5">
+            <div class="container-xl">
+                <div class="section-header mb-5">
+                    <span class="section-subtitle">Get to know me</span>
+                    <h2 class="section-title">My Journey</h2>
+                </div>
+
+                <div class="row g-5 align-items-start">
+                    <!-- Left Column: Biography -->
+                    <div class="col-lg-7 about-text-content">
+                        <h3 class="mb-4">Civil Engineer turned Software Writer</h3>
+                        <p>
+                            My path into software development is driven by a passion for building systems that solve
+                            practical, high-impact problems. Graduating with a Bachelor's in <strong>Civil
+                                Engineering</strong>, I learned the core principles of structured design, precision
+                            project management, and physical infrastructure.
+                        </p>
+                        <p>
+                            Transitioning to technology, I realized that writing code is like building digital
+                            skyscrapers. I co-founded <strong>Cophylla Homes</strong> to digitize the construction
+                            ecosystem, and completed intensive training in full-stack Java development. Today, I build
+                            advanced financial tech workflows, combining strong analytical foundations with modern
+                            programming practices.
+                        </p>
+
+                        <!-- Mini Apple-like Fact Grid -->
+                        <div class="row g-3 mt-4">
+                            <div class="col-md-4">
+                                <div class="fact-card p-4 h-100">
+                                    <div class="fact-icon fs-2 mb-3"><img class="feature-icon" src="startup.png" alt="">
+                                    </div>
+                                    <h4 class="h6 font-weight-bold">Entrepreneur Rooted</h4>
+                                    <p class="small mb-0">Almost 2+ years of experience founding and scaling a startup.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="fact-card p-4 h-100">
+                                    <div class="fact-icon fs-2 mb-3"><img class="feature-icon" src="bank.png" alt="">
+                                    </div>
+                                    <h4 class="h6 font-weight-bold">FinTech Focused</h4>
+                                    <p class="small mb-0">Deeply involved in LOS/LMS workflow automation.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="fact-card p-4 h-100">
+                                    <div class="fact-icon fs-2 mb-3"><img class="feature-icon" src="infinite-time.png"
+                                            alt=""></div>
+                                    <h4 class="h6 font-weight-bold">Lifelong Learner</h4>
+                                    <p class="small mb-0">Certified in DBMS, Stats, and Machine Learning.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Stats Box -->
+                    <div class="col-lg-5 about-stats-content">
+                        <div class="d-flex flex-column gap-4 sticky-lg-top" style="top: 100px;">
+                            <div class="stats-box p-4">
+                                <div class="stat-number">2.5+</div>
+                                <div class="stat-label">Years of Professional Tech Experience</div>
+                            </div>
+                            <div class="stats-box p-4">
+                                <div class="stat-number">100%</div>
+                                <div class="stat-label">Disbursement Reliability in LMS Code</div>
+                            </div>
+                            <div class="stats-box p-4">
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <div class="stat-val small text-uppercase">Location</div>
+                                        <div class="stat-txt font-weight-bold">Bengaluru, KA, India</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="stat-val small text-uppercase">Core Stack</div>
+                                        <div class="stat-txt font-weight-bold">Python, FastAPI, Angular</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section py-5">
+            <div class="container-xl">
+                <div class="section-header mb-5">
+                    <span class="section-subtitle">Technical Capabilities</span>
+                    <h2 class="section-title">My Skillset</h2>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Frontend Card -->
+                    <div class="col-lg-4">
+                        <div class="skills-category-card p-4 h-100">
+                            <div class="card-icon-wrapper mb-4">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                                </svg>
+                            </div>
+                            <h3 class="h5 mb-4">Frontend Development</h3>
+                            <ul class="skills-list d-flex flex-column gap-3">
+                                <li>
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="skill-name">JavaScript & TypeScript</span>
+                                        <span class="skill-pct small">90%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 90%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="skill-name">Angular</span>
+                                        <span class="skill-pct small">85%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 85%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="skill-name">React.js</span>
+                                        <span class="skill-pct small">70%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 70%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="skill-name">HTML5 & CSS3</span>
+                                        <span class="skill-pct small">95%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="style.css; width: 95%;"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Backend Card -->
+                    <div class="col-lg-4">
+                        <div class="skills-category-card p-4 h-100">
+                            <div class="card-icon-wrapper mb-4">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                                    <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path>
+                                </svg>
+                            </div>
+                            <h3 class="h5 mb-4">Backend Engineering</h3>
+                            <ul class="skills-list d-flex flex-column gap-3">
+                                <li>
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="skill-name">Python & FastAPI</span>
+                                        <span class="skill-pct small">90%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 90%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="skill-name">Java & Spring Boot</span>
+                                        <span class="skill-pct small">75%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 75%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="skill-name">Hibernate & JSP</span>
+                                        <span class="skill-pct small">70%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 70%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="skill-name">RESTful APIs</span>
+                                        <span class="skill-pct small">92%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 92%;"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Databases & ML Card -->
+                    <div class="col-lg-4">
+                        <div class="skills-category-card p-4 h-100">
+                            <div class="card-icon-wrapper mb-4">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                                    </path>
+                                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                                </svg>
+                            </div>
+                            <h3 class="h5 mb-4">Data & Machine Learning</h3>
+                            <ul class="skills-list d-flex flex-column gap-3">
+                                <li>
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="skill-name">MySQL & Oracle SQL</span>
+                                        <span class="skill-pct small">82%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 82%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="skill-name">Neural Networks & CNNs</span>
+                                        <span class="skill-pct small">65%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 65%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="skill-name">Decision Trees & ML Regressions</span>
+                                        <span class="skill-pct small">70%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 70%;"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span class="skill-name">Git & version control</span>
+                                        <span class="skill-pct small">88%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 88%;"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FinTech Interactive Demo Section -->
+        <section id="demo" class="demo-section py-5">
+            <div class="container-xl">
+                <div class="section-header mb-5 text-start">
+                    <span class="section-subtitle">Live Demonstration</span>
+                    <h2 class="section-title">FinTech LOS/LMS Simulator</h2>
+                    <p class="section-desc-para leading-relaxed">
+                        At Techfino Capital, I build Loan Origination Systems (LOS) and Loan Management Systems (LMS).
+                        Try this interactive widget to see how loan amortization schedules are calculated dynamically
+                        and simulate a credit risk check.
+                    </p>
+                </div>
+
+                <div class="row g-5">
+                    <!-- Left: Control Panel -->
+                    <div class="col-lg-5">
+                        <div class="calc-panel config-panel p-4 h-100">
+                            <h3 class="h6 font-weight-bold mb-4">1. Loan Parameters</h3>
+
+                            <div class="form-group mb-4">
+                                <label for="loan-amount" class="form-label d-flex justify-content-between">
+                                    <span>Loan Amount (LAP)</span>
+                                    <span class=" fw-bold">₹<span id="amount-val">5,00,000</span></span>
+                                </label>
+                                <input type="range" id="loan-amount" min="100000" max="2500000" step="50000"
+                                    value="500000" class="range-slider form-range">
+                                <div class="d-flex justify-content-between small mt-1">
+                                    <span>1 Lakh</span>
+                                    <span>25 Lakhs</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-4">
+                                <label for="loan-rate" class="form-label d-flex justify-content-between">
+                                    <span>Interest Rate</span>
+                                    <span class=" fw-bold"><span id="rate-val">12.5</span>% p.a.</span>
+                                </label>
+                                <input type="range" id="loan-rate" min="7" max="24" step="0.5" value="12.5"
+                                    class="range-slider form-range">
+                                <div class="d-flex justify-content-between small mt-1">
+                                    <span>7%</span>
+                                    <span>24%</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-5">
+                                <label for="loan-tenure" class="form-label d-flex justify-content-between">
+                                    <span>Tenure (Months)</span>
+                                    <span class="text-white fw-bold"><span id="tenure-val">36</span> Months</span>
+                                </label>
+                                <input type="range" id="loan-tenure" min="12" max="120" step="6" value="36"
+                                    class="range-slider form-range">
+                                <div class="d-flex justify-content-between small mt-1">
+                                    <span>12m</span>
+                                    <span>120m</span>
+                                </div>
+                            </div>
+
+                            <div class="credit-check-block p-4">
+                                <h3 class="h6 font-weight-bold mb-2 text-white">2. Risk Assessment (LOS)</h3>
+                                <p class="small mb-4">Simulate a real-time Credit Bureau & Rule-Engine check.
+                                </p>
+
+                                <div class="row g-3 mb-4">
+                                    <div class="col-6">
+                                        <label for="cibil-score" class="form-label small mb-1">CIBIL
+                                            Score</label>
+                                        <input type="number" id="cibil-score" min="300" max="900" value="750"
+                                            class="form-control num-input">
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="monthly-income" class="form-label small mb-1">Monthly
+                                            Income (₹)</label>
+                                        <input type="number" id="monthly-income" min="10000" max="500000" step="5000"
+                                            value="65000" class="form-control num-input">
+                                    </div>
+                                </div>
+                                <button id="run-check-btn" class="btn btn-primary w-100 py-2.5">Run Credit
+                                    Assessment</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Output Panel -->
+                    <div class="col-lg-7">
+                        <div class="calc-panel output-panel p-4 h-100">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <h3 class="h6 font-weight-bold mb-0 text-uppercase tracking-wider">Assessment Results
+                                </h3>
+                                <span id="decision-badge" class="badge badge-success px-3 py-2">PRE-APPROVED</span>
+                            </div>
+
+                            <!-- Metrics Grid -->
+                            <div class="row g-3 mb-4">
+                                <div class="col-sm-6">
+                                    <div class="metric-card p-3">
+                                        <span class="metric-title d-block mb-1">Monthly EMI</span>
+                                        <span class="metric-value h4 fw-bold" id="emi-value">₹16,727</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="metric-card p-3">
+                                        <span class="metric-title d-block mb-1">Total Interest</span>
+                                        <span class="metric-value h4 fw-bold" id="interest-value">₹1,02,168</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="metric-card p-3">
+                                        <span class="metric-title d-block mb-1">Total Repayment</span>
+                                        <span class="metric-value h4 fw-bold" id="repayment-value">₹6,02,168</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="metric-card p-3">
+                                        <span class="metric-title d-block mb-1">FOIR (Debt-to-Income)</span>
+                                        <span class="metric-value h4 fw-bold" id="foir-value">25.7%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Amortization Table -->
+                            <div class="amortization-container p-4 mb-4">
+                                <h4 class="h6 font-weight-bold mb-3">Amortization Schedule (First 5 Months)
+                                </h4>
+                                <div class="table-responsive">
+                                    <table class="table amortization-table table-borderless align-middle mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Month</th>
+                                                <th scope="col">Principal</th>
+                                                <th scope="col">Interest</th>
+                                                <th scope="col">Balance O/S</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="amortization-rows">
+                                            <!-- Dynamic rows loaded via script.js -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- Response Code Panel -->
+                            <div class="check-result-msg p-3 d-flex align-items-center gap-3" id="check-result-msg">
+                                <div class="msg-icon fs-3">🛡️</div>
+                                <p class="small mb-0"><strong>System Message:</strong> Applicant meets
+                                    critical score criteria. Automatic disbursement approved via LMS APIs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section py-5">
+            <div class="container-xl">
+                <div class="section-header mb-5">
+                    <span class="section-subtitle">Work History</span>
+                    <h2 class="section-title">Professional Experience</h2>
+                </div>
+
+                <div class="timeline">
+                    <!-- Techfino Capital -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date mb-2">Aug 2024 – Present</div>
+                        <div class="timeline-card p-4">
+                            <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-3">
+                                <div>
+                                    <h3 class="role-title h5 mb-1 ">Software Engineer</h3>
+                                    <h4 class="company-name h6 mb-0">Techfino Capital Private Limited</h4>
+                                </div>
+                                <span class="location-badge small text-uppercase">Bengaluru, KA</span>
+                            </div>
+                            <p class="company-desc small mb-3">Fintech NBFC focusing on MSME lending.</p>
+                            <ul class="experience-bullets">
+                                <li>Developed and maintained end-to-end features for MSME lending platforms, focusing on
+                                    LAP (Loan Against Property) workflows.</li>
+                                <li>Built modular systems for LOS (Loan Origination System), automating document
+                                    parsing, KYC integration, and credit assessment.</li>
+                                <li>Implemented core features for LMS (Loan Management System), automating loan
+                                    disbursements, collection schedules, and repayment processing.</li>
+                                <li>Optimized frontend interfaces using Angular & TypeScript, and accelerated backend
+                                    APIs using Python & FastAPI.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Techfino Support -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date mb-2">Jan 2024 – Aug 2024</div>
+                        <div class="timeline-card p-4">
+                            <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-3">
+                                <div>
+                                    <h3 class="role-title h5 mb-1 ">Support Engineer</h3>
+                                    <h4 class="company-name h6 mb-0">Techfino Capital Private Limited</h4>
+                                </div>
+                                <span class="location-badge small text-uppercase">Bengaluru, KA</span>
+                            </div>
+                            <ul class="experience-bullets">
+                                <li>Provided production support for LOS/LMS platforms.</li>
+                                <li>Resolved critical issues in loan processing workflows for MSME Project.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- JSpiders -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date mb-2">Jul 2023 – Dec 2023</div>
+                        <div class="timeline-card p-4">
+                            <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-3">
+                                <div>
+                                    <h3 class="role-title h5 mb-1 ">Full Stack Java Intern</h3>
+                                    <h4 class="company-name h6 mb-0">JSpiders Training Center</h4>
+                                </div>
+                                <span class="location-badge small text-uppercase">Bengaluru, KA</span>
+                            </div>
+                            <ul class="experience-bullets">
+                                <li>Completed Full Stack Java Development training covering Java, JavaScript, J2EE,
+                                    HTML, CSS, React.JS, Hibernate, Spring Boot, JSP, Oracle SQL.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Tech Mahindra -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date mb-2">Apr 2022 – Nov 2022</div>
+                        <div class="timeline-card p-4">
+                            <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-3">
+                                <div>
+                                    <h3 class="role-title h5 mb-1 ">Associate</h3>
+                                    <h4 class="company-name h6 mb-0">Tech Mahindra</h4>
+                                </div>
+                                <span class="location-badge small text-uppercase">Bhubaneswar, OD</span>
+                            </div>
+                            <ul class="experience-bullets">
+                                <li>Experienced customer support representative skilled in resolving complex issues and
+                                    ensuring customer satisfaction.</li>
+                                <li>Consistently exceeded performance metrics through proficiency in tools and systems.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Cophylla Homes -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date mb-2">Oct 2019 – Dec 2021</div>
+                        <div class="timeline-card p-4">
+                            <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-3">
+                                <div>
+                                    <h3 class="role-title h5 mb-1 ">Co-Founder</h3>
+                                    <h4 class="company-name h6 mb-0">Cophylla Homes.com</h4>
+                                </div>
+                                <span class="location-badge small text-uppercase">Bhubaneswar, OD</span>
+                            </div>
+                            <ul class="experience-bullets">
+                                <li>Built an online architecture and construction portal focused on building an
+                                    organized construction ecosystem.</li>
+                                <li>Delivered 100% client satisfaction across multiple projects despite COVID-19
+                                    challenges.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Mahalaxmi Construction -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date mb-2">Dec 2018 – Jun 2019</div>
+                        <div class="timeline-card p-4">
+                            <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-3">
+                                <div>
+                                    <h3 class="role-title h5 mb-1 ">Site Engineer</h3>
+                                    <h4 class="company-name h6 mb-0">Mahalaxmi Construction Pvt Ltd</h4>
+                                </div>
+                                <span class="location-badge small text-uppercase">Cuttack, OD</span>
+                            </div>
+                            <ul class="experience-bullets">
+                                <li>Led initiation of a 217,750 sq ft housing project, overseeing site cleanup and room
+                                    establishment within tight timeframes.</li>
+                                <li>Demonstrated precision and effective leadership in project commencement and
+                                    coordination.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education & Certifications (Apple card grid) -->
+                <div class="edu-cert-section mt-5 pt-5">
+                    <div class="section-header text-center mb-5">
+                        <h3 class="h4 font-weight-bold ">Education & Certifications</h3>
+                    </div>
+
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-md-6 col-lg-5">
+                            <div class="education-card p-4 h-100 text-start">
+                                <div class="edu-icon fs-1 mb-3">🎓</div>
+                                <h3 class="h5 mb-1">Bachelor of Technology (B.Tech)</h3>
+                                <h4 class="h6 mb-3">Civil Engineering</h4>
+                                <p class="edu-inst font-weight-medium mb-1">Eastern Academy of Science &
+                                    Technology</p>
+                                <p class="edu-date small">May 2018 – Oct 2022</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <div class="certifications-card p-4 h-100 text-start">
+                                <div class="cert-icon fs-1 mb-3">📜</div>
+                                <h3 class="h5 mb-2 ">Professional Certifications</h3>
+                                <ul class="cert-list p-0 m-0">
+                                    <li>Probability and Statistics for Business and Data Science</li>
+                                    <li>Advanced Learning Algorithms (Neural Networks/ML)</li>
+                                    <li>Database Management Systems</li>
+                                    <li>Supervised Machine Learning: Regression and Classification</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section py-5">
+            <div class="container-xl">
+                <div class="section-header mb-5">
+                    <span class="section-subtitle">Reach out</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                </div>
+
+                <div class="row g-5 align-items-start">
+                    <!-- Left: Social Links -->
+                    <div class="col-lg-5 contact-info text-start">
+                        <h3 class="h4 font-weight-bold mb-3 ">Let's build something great!</h3>
+                        <p class="mb-5 leading-relaxed">
+                            I'm open to discussing full-stack roles, FinTech API integrations, or modern frontend
+                            engineering opportunities. Feel free to connect via email, GitHub, or LinkedIn.
+                        </p>
+
+                        <div class="info-links d-flex flex-column gap-3">
+                            <a href="mailto:abhisekm048@gmail.com"
+                                class="info-item p-3 d-flex align-items-center gap-3">
+                                <div class="info-icon fs-4">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        width="22" height="22">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                        </path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="info-text">
+                                    <span class="small  text-uppercase d-block">Email me</span>
+                                    <strong class="text-white">abhisekm048@gmail.com</strong>
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/abhisek-mohanty-81a8a016a/" target="_blank"
+                                rel="noopener noreferrer" class="info-item p-3 d-flex align-items-center gap-3">
+                                <div class="info-icon fs-4">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        width="22" height="22">
+                                        <path
+                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                        </path>
+                                        <rect x="2" y="9" width="4" height="12"></rect>
+                                        <circle cx="4" cy="4" r="2"></circle>
+                                    </svg>
+                                </div>
+                                <div class="info-text">
+                                    <span class="small  text-uppercase d-block">Connect on LinkedIn</span>
+                                    <strong class="text-white">Abhisek Mohanty</strong>
+                                </div>
+                            </a>
+                            <a href="https://github.com/Abhisek-Mohanty" target="_blank" rel="noopener noreferrer"
+                                class="info-item p-3 d-flex align-items-center gap-3">
+                                <div class="info-icon fs-4">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        width="22" height="22">
+                                        <path
+                                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                                        </path>
+                                        <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                                    </svg>
+                                </div>
+                                <div class="info-text">
+                                    <span class="small  text-uppercase d-block">Follow my GitHub</span>
+                                    <strong class="text-white">github.com/Abhisek-Mohanty</strong>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Form -->
+                    <div class="col-lg-7">
+                        <div class="contact-form-card p-5 h-100">
+                            <form id="contact-form">
+                                <div class="form-group-float mb-4">
+                                    <input type="text" id="form-name" name="name" required placeholder=" "
+                                        class="form-control">
+                                    <label for="form-name">Full Name</label>
+                                </div>
+                                <div class="form-group-float mb-4">
+                                    <input type="email" id="form-email" name="email" required placeholder=" "
+                                        class="form-control">
+                                    <label for="form-email">Email Address</label>
+                                </div>
+                                <div class="form-group-float mb-4">
+                                    <input type="text" id="form-subject" name="subject" required placeholder=" "
+                                        class="form-control">
+                                    <label for="form-subject">Subject</label>
+                                </div>
+                                <div class="form-group-float mb-5">
+                                    <textarea id="form-message" name="message" required rows="5" placeholder=" "
+                                        class="form-control"></textarea>
+                                    <label for="form-message">Message</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100 py-3">
+                                    Send Message
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ms-1">
+                                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                    </svg>
+                                </button>
+                                <div id="form-status" class="form-status-msg mt-3"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container-xl footer-container d-flex justify-content-between align-items-center flex-wrap gap-2">
+            <p class="mb-0">&copy; 2026 Abhisek Mohanty. All rights reserved.</p>
+            <p class="built-with mb-0">Built with HTML5, CSS3, Bootstrap 5 & vanilla JS.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
