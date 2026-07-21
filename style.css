@@ -771,7 +771,7 @@ html[data-theme="light"] .moon-icon {
 .amortization-table td {
     font-size: 0.82rem;
     font-family: Menlo, Monaco, Consolas, monospace;
-    color: var(--apple-text-primary);
+    color: black;
     border: none;
     padding: 0.4rem 0;
 }

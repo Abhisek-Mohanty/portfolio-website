@@ -264,7 +264,7 @@ const initFintechWidget = () => {
 
                 const row = document.createElement('tr');
                 row.innerHTML = `
-                    <td>Month ${i}</td>
+                    <td>&nbsp;Month ${i}</td>
                     <td>${formatRupee(principalPaid)}</td>
                     <td>${formatRupee(interestPaid)}</td>
                     <td>${formatRupee(balance)}</td>
@@ -310,12 +310,12 @@ const initFintechWidget = () => {
                 decisionBadge.textContent = 'PRE-APPROVED';
                 decisionBadge.className = 'badge badge-success px-3 py-2';
                 resultMsgBlock.className = 'check-result-msg p-3 d-flex align-items-center gap-3';
-                resultMsgBlock.innerHTML = `<div class="msg-icon fs-3">🛡️</div><p class="small mb-0 text-muted">${message}</p>`;
+                resultMsgBlock.innerHTML = `<div class="msg-icon fs-3">🛡️</div><p class="small mb-0">${message}</p>`;
             } else if (status === 'referred') {
                 decisionBadge.textContent = 'REFERRED';
                 decisionBadge.className = 'badge badge-warning px-3 py-2';
                 resultMsgBlock.className = 'check-result-msg p-3 d-flex align-items-center gap-3 warning-assessment';
-                resultMsgBlock.innerHTML = `<div class="msg-icon fs-3">⚠️</div><p class="small mb-0 text-muted">${message}</p>`;
+                resultMsgBlock.innerHTML = `<div class="msg-icon fs-3">⚠️</div><p class="small mb-0">${message}</p>`;
             } else {
                 decisionBadge.textContent = 'DECLINED';
                 decisionBadge.className = 'badge px-3 py-2';
@@ -323,7 +323,7 @@ const initFintechWidget = () => {
                 decisionBadge.style.color = '#ef4444';
                 decisionBadge.style.borderColor = 'rgba(239, 68, 68, 0.15)';
                 resultMsgBlock.className = 'check-result-msg p-3 d-flex align-items-center gap-3 warning-assessment';
-                resultMsgBlock.innerHTML = `<div class="msg-icon fs-3">❌</div><p class="small mb-0 text-muted">${message}</p>`;
+                resultMsgBlock.innerHTML = `<div class="msg-icon fs-3">❌</div><p class="small mb-0">${message}</p>`;
             }
 
             runCheckBtn.disabled = false;
