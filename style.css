@@ -58,7 +58,9 @@ body {
     transition: background-color var(--apple-duration-slow) var(--apple-ease),
         color var(--apple-duration-slow) var(--apple-ease);
 }
-
+.text-white{
+    color: var(--apple-badge-bg);
+}
 .text-outline {
     color: transparent;
     -webkit-text-stroke: 2px #111;
