@@ -401,8 +401,8 @@ const initContactForm = () => {
    ========================================================================= */
 const initCometCursor = () => {
     // Disable on mobile/touch devices (where coarse pointers like fingers are used)
-    // if (window.matchMedia('(pointer: coarse)').matches) return;
-    document.body.style.cursor = 'none'
+    if (window.matchMedia('(pointer: coarse)').matches) return;
+    document.body.style.cursor = 'none';
 
     // Create and inject Canvas
     const canvas = document.createElement('canvas');

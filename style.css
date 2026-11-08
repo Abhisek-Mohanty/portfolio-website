@@ -59,62 +59,17 @@ body {
         color var(--apple-duration-slow) var(--apple-ease);
 }
 
-.text-white {
-    color: var(--apple-badge-bg);
-}
-
-.text-outline {
-    color: transparent;
-    -webkit-text-stroke: 2px #111;
-}
-
-h1 {
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Outfit", sans-serif;
-    font-weight: 700;
-    letter-spacing: -0.022em;
-    color: var(--apple-text-primary);
-}
-
 .text-outline {
     color: transparent;
     -webkit-text-stroke: 1px var(--apple-text-primary);
 }
 
-h2 {
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Outfit", sans-serif;
-    font-weight: 700;
-    letter-spacing: -0.022em;
-    color: var(--apple-text-primary);
-}
-
-h3 {
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Outfit", sans-serif;
-    font-weight: 700;
-    letter-spacing: -0.022em;
-    color: var(--apple-text-primary);
-}
-
-h4 {
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Outfit", sans-serif;
-    font-weight: 700;
-    letter-spacing: -0.022em;
-    color: var(--apple-text-primary);
-}
-
-h5 {
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Outfit", sans-serif;
-    font-weight: 700;
-    letter-spacing: -0.022em;
-    color: var(--apple-text-primary);
-}
-
-h6 {
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Outfit", sans-serif;
-    font-weight: 700;
-    letter-spacing: -0.022em;
-    color: var(--apple-text-primary);
-}
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 .display-4 {
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Outfit", sans-serif;
     font-weight: 700;
@@ -775,7 +730,7 @@ html[data-theme="light"] .moon-icon {
 .amortization-table td {
     font-size: 0.82rem;
     font-family: Menlo, Monaco, Consolas, monospace;
-    color: black;
+    color: var(--apple-text-primary);
     border: none;
     padding: 0.4rem 0;
 }
@@ -1057,12 +1012,8 @@ html[data-theme="light"] .moon-icon {
 }
 
 .launches-section {
-    /* padding-bottom: 1px; */
-    min-height: 36vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* padding: 10px; */
+    min-height: 45vh;
+    padding-bottom: 80px;
 }
 
 .product-card {
@@ -1135,6 +1086,27 @@ html[data-theme="light"] .product-card.card-premium:hover {
     border: 1px solid var(--apple-text-primary);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     font-weight: 700;
+}
+
+/* Live Badge Style */
+.badge-live {
+    background-color: rgba(52, 211, 153, 0.12);
+    color: #34d399;
+    border: 1px solid rgba(52, 211, 153, 0.25);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 600;
+}
+
+.badge-live::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #34d399;
+    box-shadow: 0 0 6px #34d399;
 }
 
 /* Card Content Spacing */
